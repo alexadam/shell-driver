@@ -1,0 +1,321 @@
+@import '../../global.scss';
+
+.shell-view-container {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  overflow-y: auto;
+  background-color: $backgroundColor;
+}
+
+.shell-view-header {
+  width: 100%; height: 36px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex; flex-direction: row;
+  align-items: center;
+  padding: 3px;
+  border-bottom: solid 1px rgba(0, 0, 0, 1);
+}
+
+.shell-view-header-left {
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex; flex-direction: row;
+}
+
+.shell-view-header-right {
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex; flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.runner-url-input-label {
+  font-family: $fontFamily;
+  font-size: $fontSize
+}
+
+.runner-url-input {
+  width: 70%;
+  padding: 5px;
+  margin-left: 5px;
+  border: none;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+.runner-url-input-button {
+  padding: 0 5px !important;
+}
+
+
+.shell-view-content {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: row;
+  align-items: center;
+}
+
+///
+
+.shell-view-list-container {
+  min-width: 700px; max-width: 700px; height: 100%;
+  display: flex; flex-direction: column;
+  background-color: $backgroundColor;;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.list-menu {
+  width: 100%; height: auto;
+  display: flex; flex-direction: row; align-items: flex-start;
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+.shell-view-list-title {
+  width: 100%; height: auto;
+  font-size: 18px;
+  font-family: $fontFamily;
+  font-weight: bold;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.4);
+  padding-bottom: 10px;
+}
+
+.shell-view-ui-items {
+  width: 100%; height: auto;
+  display: flex; flex-direction: column;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.shell-view-tasks {
+  width: 100%; height: auto;
+  display: flex; flex-direction: column;
+}
+
+.term-connect-button {
+  width: 300px; height: 40px;
+  background-color: #F09751;
+  position: absolute;
+  top: 40%;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: $fontFamily;
+  font-weight: bold;
+  display: flex; flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+////
+
+.shell-view-term-container {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  background-color: $backgroundColor;
+}
+
+.shell-view-terminal {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.shell-view-term-header {
+  width: 100%;  height: 45px;
+  display: flex; flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.shell-view-term-footer {
+  width: 100%;  height: 50px;
+  display: flex; flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.xterm-wrapper {
+  width: 100%; height: 100%; 
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  background-color: black;
+}
+
+.terminal  {
+  width: 100% !important; 
+  height: 100% !important;
+  padding: 10px;
+}
+
+
+////
+
+.shell-view-cmd-input {
+  width: 100%;
+  padding: 5px;
+}
+
+textarea.shell-view-cmd-input {
+  width: 100%;
+  padding: 5px;
+  resize: vertical;
+  min-height: 30px;
+  max-height: 300px;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+}
+
+.shell-view-cmd-input-button {
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  font-size: 10px;
+  width: 50px;
+  height: 100%;
+ 
+  cursor: pointer;
+
+  svg {
+    width: 24px; height: 24px;
+  }
+}
+.shell-view-cmd-input-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cmd-action-btn {
+  background-color: white;
+  border: solid 1px rgba(0, 0, 0, 0.6);
+  border-left: none;
+}
+
+//
+
+.selection-actions-container {
+  width: 100%; height: 40px; min-height: 40px;
+  display: flex; flex-direction: row;
+  padding-left: 10px;
+  overflow-x: auto;
+}
+
+.selection-action {
+  max-width: 400px; min-width: 50px;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: $actionColor;
+  color: white;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+}
+.selection-action:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+
+//////
+
+.quick-actions-menu {
+  width: 33px; height: auto;
+  display: flex; flex-direction: column;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0 3px;
+}
+
+.quick-actions-floating-menu {
+  min-width: 300px; height: auto;
+  display: flex; flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  z-index: 99999;
+  position: fixed;
+  right: 0;
+}
+
+.quick-action-small {
+  width: 100%; height: 30px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: monospace;
+  line-height: 30px;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.quick-action-small:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.quick-action {
+  width: 100%; height: 30px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+  line-height: 30px;
+  vertical-align: middle;
+}
+.quick-action:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+////
+
+.term-filter {
+  min-width: 50px; max-width: 200px; height: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.term-filter-label {
+  width: 100%;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: 30px;
+  vertical-align: middle;
+  padding: 0 5px;
+  
+}
+
+.term-filter-button {
+  width: 30px; height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+.term-filter-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.shell-search {
+  display: flex; flex-direction: row;
+  height: 30px;
+  align-items: center;
+}
+
+.shell-search-input {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  margin-left: 5px;
+  padding: 3px;
+}

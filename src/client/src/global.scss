@@ -1,0 +1,60 @@
+
+$backgroundColor: #F3ECDE;
+// $backgroundColor: white;
+
+$actionColor: #5C4EE9;
+
+$fontFamily: sans-serif;
+
+$fontSize: 14px;
+
+
+.action-button {
+  border: none;
+  outline: none;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  background-color: rgba(0, 0, 0, 0);
+  background-color: $actionColor;
+  color: white;
+  cursor: pointer;
+  padding: 0 10px;
+
+  border-radius: 5px;
+  height: 100%;
+  height: 30px; line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 5px;
+}
+.action-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.action-button-small {
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: $actionColor;
+  font-weight: bold;
+}
+
+.text-button {
+  border: none;
+  outline: none;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  background-color: rgba(0, 0, 0, 0);
+  color: $actionColor;
+  cursor: pointer;
+  padding: 0px 10px;
+  border-radius: 5px;
+  height: 30px; line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 5px;
+}
+.text-button:hover {
+  background-color: $actionColor;
+  color: white;
+}

@@ -1,0 +1,250 @@
+@import '../../global.scss';
+
+.md-editor-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #DCDCE2;
+  background-color: #E6E6EC;
+  background-color: $backgroundColor;
+}
+
+.md-editor-top-menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-left: 250px;
+
+  button {
+    margin-right: 5px;
+  }
+}
+
+.md-editor-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.md-editor-menu {
+  width: 200px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.md-editor-menu-group {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 20px;
+
+  button {
+    margin-bottom: 2px;
+  }
+}
+
+.md-editor {
+  width: 800px;
+  height: 100%;
+  min-width: 800px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+///
+
+.react-codemirror2 {
+  width: 100%;
+  height: 100%;
+}
+
+.CodeMirror {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  font-family: monospace !important;
+  font-size: 16px;
+}
+
+.CodeMirror-hints {
+  z-index: 99999 !important;
+}
+
+.cm-header-1,
+.cm-header-2,
+.cm-header-3 {
+  color: black !important;
+}
+
+.cm-header-1,
+.cm-header-2 {
+  color: black !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+
+.cm-header-3 {
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-style: italic !important;
+}
+
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  color: black !important;
+  font-weight: normal !important;
+}
+
+.CodeMirror-wrap pre {
+  word-break: break-word;
+}
+
+.cm-url {
+  color: blue;
+  cursor: pointer;
+}
+
+.cm-url:hover {
+  text-decoration: underline;
+}
+
+.cm-comment {
+  border-left: solid 1px rgba(0, 0, 0, 0.1) !important;
+  padding-left: 10px !important;
+}
+
+////
+
+.md-outline {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.md-outline-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+
+
+  button {
+    cursor: pointer;
+  }
+}
+
+.md-outline-body {
+  width: 100%;
+  margin-left: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+///
+///
+///
+
+.insert-popup {
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.insert-popup-column {
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.popup-button {
+  width: 100%;
+  text-align: left;
+}
+
+.popup-button:focus {
+  outline: solid 1px $actionColor;
+}
+
+/////
+
+.html-preview-dialog {
+  width: 850px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.html-preview-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.html-preview-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.html-preview-frame {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  border: none;
+}
+
+.html-preview-dialog-footer {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  background-color: white;
+}
+
+
+input[type="file"] {
+  display: none;
+}
+
+.disabled-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
