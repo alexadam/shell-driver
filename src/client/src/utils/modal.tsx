@@ -6,6 +6,7 @@ interface IModalProps {
   isVisible: boolean
   onClose: (result: any) => void
   children?: any
+  closeOnEsc?: boolean
 }
 
 const Modal = (props: IModalProps) => {
@@ -16,7 +17,7 @@ const Modal = (props: IModalProps) => {
 
   /// Close Edit Menu on ESC
   useKeyDown((key: any) => {
-    if (key.keyCode === 27) {
+    if (key.keyCode === 27 && props.closeOnEsc) {
       props.onClose(null)
     } 
   })
@@ -34,7 +35,7 @@ const Modal = (props: IModalProps) => {
       alignItems: 'center',
       justifyContent: 'center',
       position: 'fixed',
-      zIndex: 9999998,
+      zIndex: 98,
       top: 0,
       left: 0,
       width: '100%',
@@ -43,9 +44,9 @@ const Modal = (props: IModalProps) => {
     }}>
       <div className="modal-content" 
         onClick={(e)=> e.stopPropagation()} 
-        style={{zIndex: 9999999, 
-        maxHeight: '90%',
-        maxWidth: '90%',
+        style={{zIndex: 99, 
+        maxHeight: '100%',
+        maxWidth: '100%',
         }}>
         {props.children}
       </div>

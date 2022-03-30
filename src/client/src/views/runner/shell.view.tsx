@@ -12,6 +12,7 @@ import FileBrowserView from "../../utils/file-browser.view";
 import { useNavigate } from "react-router-dom";
 import _ from "underscore";
 import ReactiveEditorView from "../reactive-editor/reactive-editor.view";
+import Modal from "../../utils/modal";
 
 
 ////
@@ -347,11 +348,11 @@ const RunShellView = () => {
 
   }
 
-  if (isInEditMode) {
-    return (
-      <ReactiveEditorView mdString={mdScript.current} onClose={onSaveEditChanges} isEmbedded={true} />
-    )
-  }
+  // if (isInEditMode) {
+  //   return (
+  //     <ReactiveEditorView mdString={mdScript.current} onClose={onSaveEditChanges} isEmbedded={true} />
+  //   )
+  // }
 
   return (
     <div className="shell-view-container">
@@ -479,6 +480,12 @@ const RunShellView = () => {
         onSelectFile={onSelectFile}
         selectType="folder"
       />
+
+      <Modal isVisible={isInEditMode} onClose={onSaveEditChanges} closeOnEsc={false}>
+        <div style={{width: `${document.body.clientWidth}px`, height: `${document.body.clientHeight}px`}}>
+          <ReactiveEditorView mdString={mdScript.current} onClose={onSaveEditChanges} isEmbedded={true} />
+        </div>
+      </Modal>
     </div>
   )
 }
