@@ -15,7 +15,7 @@ Run each Shell Command in a Web based Terminal
  - Quickly insert blocks
  - Live HTML Preview in the Editor
 
-<img src="https://github.com/alexadam/shell-driver/blob/main/imgs/2.jpg?raw=true" width="800">
+<img src="https://github.com/alexadam/shell-driver/blob/main/imgs/3.jpg?raw=true" width="800">
 
 **Save as HTML Document**
 
@@ -23,7 +23,7 @@ Run each Shell Command in a Web based Terminal
  - It works in almost any web Browser (no Internet connection needed)
  - You can use it as dynamic Documentation
 
-<img src="https://github.com/alexadam/shell-driver/blob/main/imgs/4.jpg?raw=true" width="800">
+<img src="https://github.com/alexadam/shell-driver/blob/main/imgs/2.jpg?raw=true" width="800">
 
 **Run in a Web based Terminal**
 
@@ -34,7 +34,7 @@ Run each Shell Command in a Web based Terminal
  - Save History as MarkDown/HTML Document
  - Export Logs
 
-<img src="https://github.com/alexadam/shell-driver/blob/main/imgs/3.jpg?raw=true" width="800">
+<img src="https://github.com/alexadam/shell-driver/blob/main/imgs/4.jpg?raw=true" width="800">
 
 ## Documentation
 
