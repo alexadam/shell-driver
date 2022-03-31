@@ -4,6 +4,7 @@ import './app.scss'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RunShellView from './views/runner/shell.view';
 import ReactiveEditorView from './views/reactive-editor/reactive-editor.view';
+import RunShellViewDemo from './views/runner/shell.view.demo';
 
 ReactDOM.render(
     <BrowserRouter>

@@ -207,7 +207,6 @@
       };
  
      function updateState(input) {
-       console.log('aaaa', input)
       let stateKey = input.id.replace('rd-', '')
        state[stateKey] = input.value
        replaceAllTemplates()

@@ -146,7 +146,6 @@ const RunShellView = () => {
     //   <head>
     //   <script>
     //     function emit(message) {
-    //       console.log('am emis')
     //       window.top.postMessage(message, '*')
     //     }
     //   </script>
@@ -160,6 +159,7 @@ const RunShellView = () => {
     termRef.current = new Terminal({
       rendererType: 'dom',
       scrollback: 99999999,
+      convertEol: true,
       // screenReaderMode: true,
       // theme: 
     });
@@ -187,7 +187,7 @@ const RunShellView = () => {
         setTermSelText(sel)
       }
     })
-    termRef.current.onTitleChange((s: any, u: any) => console.log('TITLE', s, u))
+    // termRef.current.onTitleChange((s: any, u: any) => console.log('TITLE', s, u))
 
     /////
     /////

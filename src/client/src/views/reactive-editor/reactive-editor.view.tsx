@@ -46,6 +46,17 @@ const ReactiveEditorView = (props: IReactiveEditorViewProps) => {
 echo Hello {{ name }}
 \`\`\`
 
+\`\`\`@filter
+{
+  "name": "Hello",
+  "regex": "hel*o",
+  "ignoreCase": "true"
+}
+\`\`\`
+
+\`\`\`@selection-action
+echo Hello {{ $selection }}
+\`\`\`
 `)
 
   useEffect(() => {
